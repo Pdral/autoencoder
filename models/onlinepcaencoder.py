@@ -11,7 +11,7 @@ print("Início da execução online\n")
 
 # Nessa simulação, usaremos a leitura dos arquivos como a recepção do sinal
 
-path = "../chb01"
+path = "../data/chb01"
 files = listdir(path)
 empty_buffer = True
 trn = True

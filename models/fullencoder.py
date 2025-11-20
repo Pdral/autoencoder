@@ -7,7 +7,7 @@ import math
 
 print("Lendo arquivos\n")
 
-path = "../chb01"
+path = "../data/chb01"
 files = listdir(path)
 signals = []
 labels = []

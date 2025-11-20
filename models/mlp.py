@@ -11,7 +11,7 @@ mlp = MLPRegressor(hidden_layer_sizes=(138, 69, 138), activation='logistic', sol
 
 print("Lendo arquivos\n")
 
-path = "../chb01"
+path = "../data/chb01"
 files = listdir(path)
 signals = []
 labels = []
