@@ -2,7 +2,7 @@ import pandas as pd
 from pyedflib import highlevel
 import numpy as np
 import math, time
-from freq_feature import extract_features
+from freq_feature import FreqFeatureExtractor
 from joblib import Parallel, delayed
 from functools import partial
 
@@ -39,6 +39,6 @@ def generate_matrix(k, signals, n):
     except:
         signal = signals[:, n * k:]
 
-    features = extract_features(signal)
+    features = FreqFeatureExtractor.extract_features(signal)
     
     return features
